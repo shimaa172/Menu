@@ -1,0 +1,315 @@
+/* Start Global Rules */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif, "FontAwesome";
+    background: linear-gradient(90deg, rgba(251, 62, 104, 1) 0%, rgba(154, 68, 179, 1) 51%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 0px 40px;
+}
+
+:root {
+    --main-color: #FFC500;
+    --mr-b: 20px;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.margin {
+    margin: 0;
+}
+
+.btn {
+    padding: 10px;
+    background-color: var(--main-color);
+    border: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: black;
+    color: var(--main-color);
+}
+
+/* TabLink Section */
+.tab-items {
+    margin-top: 50px;
+    margin-bottom: var(--mr-b);
+}
+
+.tab-items .tab-items-link {
+    flex: 0 0 19%;
+    max-width: 19%;
+
+}
+
+/* Price Section Start */
+.price-section .img-section {
+    flex: 0 0 68%;
+    max-width: 68%;
+    height: 350px;
+    position: relative;
+    color: white;
+}
+
+.price-section .img-section .img-text {
+    position: absolute;
+    top: 7%;
+    left: 4%;
+}
+
+.img-text h2,
+.img-text p {
+    width: fit-content;
+    background-color: var(--main-color);
+    padding: 5px;
+    color: black;
+}
+
+.price-section .price-items {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.price-section .price-items .price-item {
+    height: 117px;
+    margin-bottom: 17px;
+    padding-top: 50px;
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+.price-items .price-item h1 {
+    font-weight: 100;
+    font-size: 42px;
+}
+
+.price-items .price-item p {
+    font-weight: 900;
+    font-size: 10px;
+}
+
+/* Icon Section */
+.icon-sections {
+    margin-bottom: var(--mr-b);
+}
+
+.icon-sections .section {
+    flex: 0 0 24%;
+    padding: 10px 0px;
+    background-color: white;
+    text-align: center;
+}
+
+.icon-sections .section h3,
+.details-section .details {
+    letter-spacing: -1px;
+}
+
+.icon-sections .section p {
+    padding: 0px 30px;
+}
+
+/* Details Section */
+.details-section {
+    margin-bottom: var(--mr-b);
+}
+
+.details-section .taco-img {
+    flex: 0 0 35%;
+    max-width: 35%;
+    background-color: white;
+}
+
+.details-section .taco-img img {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.details-section .details {
+    flex: 0 0 65%;
+    max-width: 65%;
+    padding: 70px 0px;
+    background-color: white;
+}
+
+.details-section .details .btn i {
+    padding-left: 5px;
+}
+
+/* Head Of Group Imges */
+.head {
+    margin-bottom: var(--mr-b);
+}
+
+.head .container {
+    align-items: center;
+}
+
+.head .gardient {
+    flex: 0 0 41%;
+    max-width: 41%;
+    height: 8px;
+}
+
+.head .left {
+    background: linear-gradient(90deg, rgba(255, 197, 0, 0) 0%, rgba(255, 197, 0, 1) 100%);
+}
+
+.head .right {
+    background: linear-gradient(-90deg, rgba(255, 197, 0, 0) 0%, rgba(255, 197, 0, 1) 100%);
+}
+
+.head h3 {
+    flex: 0 0 18%;
+    max-width: 18%;
+    text-align: center;
+}
+
+/* Images Group */
+.img-group {
+    margin-bottom: var(--mr-b);
+}
+
+.img-group .parent {
+    flex: 0 0 19%;
+    max-width: 19%;
+    /* height: 250px; */
+    padding-bottom: 20px;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.img-group .parent a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+    display: none;
+}
+
+.img-group .parent:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+
+}
+
+.img-group .parent:hover a {
+    display: block;
+}
+
+/************************ Responsive *********************************/
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .container {
+        padding: 0px 20px;
+    }
+
+    .tab-items .container {
+        justify-content: center;
+    }
+
+    .tab-items .tab-items-link {
+        flex: 0 0 29%;
+        max-width: none;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .price-section .img-section {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .price-section .price-items {
+        flex: 0 0 100%;
+        display: flex;
+        max-width: 100%;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    .price-section .price-items .price-item {
+        flex: 0 0 48%;
+        height: 86px;
+        padding-top: 34px;
+
+    }
+
+    .img-section {
+        height: unset !important;
+    }
+
+    .img-text h2 {
+        margin: 0;
+        font-size: initial;
+    }
+
+    .img-text p,
+    .details-section .details p {
+        font-size: small;
+    }
+
+    .icon-sections .section {
+        flex: 0 0 48%;
+        margin-bottom: 20px;
+    }
+
+    .icon-sections .section p {
+        padding: 0px 8px;
+    }
+
+    .details-section .details {
+        padding: 20px 0px;
+    }
+
+    .head .gardient {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .head h3 {
+        flex: 0 0 40%;
+        max-width: 40%;
+        font-size: inherit;
+    }
+
+    .img-group .parent {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+
+}
+
+/* At Width-768px */
+@media (width:768px) {
+    .head .gardient {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .head h3 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+/* Extra small devices (Tablets and iPads, 601px up to 912px) */
+@media (min-width:601px) and (max-width:912px) {
+    .icon-sections .section p {
+        padding: 0;
+    }
+}
